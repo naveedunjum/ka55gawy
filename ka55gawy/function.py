@@ -5,4 +5,6 @@ from PIL import Image
 def imshow(X, resize=None):
     """docstring
     """
-    pass
+    if resize:
+        X.resize(resize)
+    X.show()
